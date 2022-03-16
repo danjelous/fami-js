@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Intro</title>
+  </head>
+  <body>
+    <!-- Tag-Sammulung: h1's -->
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <p>Ich bin ein Para!</p>
+
+    <!-- Listen -->
+    <ol>
+      <li>List Item von ol</li>
+      <li>List Item von ol</li>
+      <li>List Item von ol</li>
+    </ol>
+
+    <ul>
+      <li>List Item von ol</li>
+      <li>List Item von ol</li>
+      <li>List Item von ol</li>
+      <li>asljdgh</li>
+    </ul>
+
+    <!-- Shortcur für 100 li items erzeugen (DO IT!) -->
+    ul>li*100
+
+    <!-- Kommentar -->
+
+    <!-- Bilder -->
+    <img
+      src="my-pink-pony.jpg"
+      alt="Freudiges pinkes Pony tänzelt auf grüner Wiese, Feenstaub überall"
+    />
+    <img src="" alt="" srcset="" />
+    <picture>
+      <!-- Wird ab 1000px Bildschirmbreite geladen -->
+      <source media="(min-width: 1000px)" srcset="big-pony.jpg" />
+
+      <!-- "Ausgangspunkt", wenn nichts besseres gefunden wird, dieses Bild laden -->
+      <img src="small-pony.jpg" alt="" />
+    </picture>
+    <figure>
+      <img src="" alt="" />
+      <figcaption>Zusätzliche Bildbeschreibung</figcaption>
+    </figure>
+
+    <!-- 'Sonstige‘ -->
+    <button></button>
+    <a href="google.com"></a>
+    <table></table>
+
+    <!-- Dunno what to do -->
+    <div>Hallo! Ich bin Block Element!</div>
+    <span>Hallo! Ich bin Inline Element!</span>
+
+    <!-- Bis hier hin 'Pre HTML5' basics -->
+
+    <!-- Ab hier semantische (mit Bedeutung) 'Website '-->
+    <nav>
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+    </nav>
+
+    <!-- Header ('Hero') Erster Fokus, catchy -->
+    <header>
+      <img
+        src="background.jpg"
+        alt="Super lässiger Hero mit emotionalem Mehrwert"
+      />
+      <h1>Da ist meine h1 platziert (da hier wichtig)</h1>
+      <h2>Subtitle</h2>
+    </header>
+
+    <!-- Sidebar (eventuell) -->
+    <aside>
+      <!-- Weitere nav -->
+      <nav></nav>
+
+      <!-- Oder nur inspirierende Bilder -->
+      <img src="" alt="" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+    </aside>
+
+    <!-- main: Ab hier Hauptcontent -->
+    <main>
+      <!-- Meist in mehrere Abschnitte (Sections) untergliedert -->
+      <section>
+        <h2>Überschrift des Abschnitts (Über mich Teaser z.B.)</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione iure
+          est sed voluptatem sequi ut ad id voluptatibus molestias. Quod nam,
+          sunt eum molestias doloremque porro officiis tenetur exercitationem
+          illo?
+
+          <!-- CTA (call to action) Button mit Link auf Detailseite -->
+          <a href="https://wikipedia.com" target="_blank">Blank link zu wikipedia</a>
+          <a href="https://wikipedia.com">Link zu wikipedia im gleichen Tab - besser so!</a>
+
+          <!-- Spezielle CTA-Links -->
+          <a href="mailto:daniel@brunner.at?Subject=Betreffzeile - vorausgefüllt 🎉&Body=Yo!">Mail an Daniel schreiben</a>
+          <a href="tel:+43 650 / 3000 801">Daniel anrufen!</a>
+        </p>
+
+        <!-- Kleines teaser image -->
+        <img src="" alt="">
+      </section>
+
+      <!-- Gleiches Spiel für Section 2 mit Fokus auf "Meine Produkte" Teaser z.B. -->
+      <section>
+        ...
+      </section>
+
+      <!-- Artikel, speziell für Blog-Beiträge -->
+      <article>
+        <!-- Gleiches Spiel wie bei sections -->
+      </article>
+
+      <!-- section mit Tags zum ausprobieren -->
+      <section>
+        <h2>Spielwiese</h2>
+
+        <blockquote>
+          "Zitat von irgendjemanden"
+        </blockquote>
+
+        <pre>"Preformatted Text": Speziell für Code-Beispiel</pre>
+        <code>Hier steht Code; z.B. 
+          .menu {
+            background-color: red;
+          }
+        </code>
+
+        <address>Bahhofstraße 10, 6850 Dorabira</address>
+
+        <!-- Do's and dont's -->
+        <p>Don't:</p>
+        <ol>
+          <li>span / Div übermäßig benutzen</li>
+          <li><code>&lt;b&gt; und &lt;i&gt;</code> Tag's verwenden</li>
+        </ol>
+
+        <p>Do's:</p>
+        <ol>
+          <li>Tags mit Bedeutung (Semantik) verwenden, meist in HTML5 referenziert</li>
+          <li><code>&lt;strong&gt; und &lt;em&gt;</code> Tag's verwenden</li>
+          <li><strong>"Fetter" Text</strong></li>
+          <li><em>"Kursiver" Text</em></li>
+        </ol>
+
+        <h2>Lesestoff:</h2>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML5 Referenz MDN</a>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Links zu Impressum / Datenschutz / AGB -->
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+
+      <!-- Social Media stuff -->
+    </footer>
+  </body>
+</html>

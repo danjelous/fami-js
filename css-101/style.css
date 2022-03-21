@@ -1,0 +1,29 @@
+/* 'Mini' CSS-Reset, damit in allen Browsern alles gleich dargestellt wird,
+ * also das "User Agent Stylesheet" (vordefiniertes Styling der einzelnen Browsern)
+ * zurückgesetzt wird, daher CSS-Reset. 
+ */
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+.green {
+  background: green;
+}
+
+/* Styling auf Tagbasis */
+html {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.blue {
+  background: blue;
+}
+
+h1 {
+  color: orange;
+}

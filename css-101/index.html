@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!-- Inline Styling via style-Attribut: Vermeiden, da Specifity durcheinandergebracht wird -->
+<!-- <html lang="en" style="background: aqua;" class="green"> -->
+<html lang="en" class="blue green yellow">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 101</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Internal CSS, auch vermeiden. Führt zu Chaos > externes File ist am besten :) -->
+  <style>
+    html {
+      background: yellow;
+    }
+  </style>
+
+  <h1>Montag, schon wieder</h1>
+
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+</body>
+</html>

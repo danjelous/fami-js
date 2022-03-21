@@ -3,28 +3,71 @@
 <!-- Inline Styling via style-Attribut: Vermeiden, da Specifity durcheinandergebracht wird -->
 <!-- <html lang="en" style="background: aqua;" class="green"> -->
 <html lang="en" class="blue green yellow">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS 101</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Internal CSS, auch vermeiden. Führt zu Chaos > externes File ist am besten :) -->
-  <style>
-    html {
-      background: yellow;
-    }
-  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 101</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Internal CSS, auch vermeiden. Führt zu Chaos > externes File ist am besten :) -->
+    <style>
+      html {
+        background: yellow;
+      }
+    </style>
 
-  <h1>Montag, schon wieder</h1>
+    <h1>Montag, schon wieder</h1>
 
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
+    <h2>Boxes</h2>
+    <div class="box-container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
 
-</body>
+    <h2>Document flow / display-Property</h2>
+
+    <h3>block / inline</h3>
+    <!-- Für styling im Text inline-Elemente wie span nehmen -->
+    <p>
+      Lorem ipsum dolor sit <span class="red-text">amet,</span> consectetur
+      adipisicing elit. Voluptatum recusandae voluptatem veritatis,
+      reprehenderit totam, officiis asperiores placeat quaerat assumenda maxime
+      qui culpa at labore commodi veniam a, id vel rerum.
+    </p>
+
+    <!-- <div> würde den Flow von links nach rechts unterbrechen -->
+    <!-- <p>Lorem ipsum dolor sit <div class="red-text">amet,</div> consectetur adipisicing elit. Voluptatum recusandae voluptatem veritatis, reprehenderit totam, officiis asperiores placeat quaerat assumenda maxime qui culpa at labore commodi veniam a, id vel rerum.</p> -->
+
+    <h3>Display Flex</h3>
+    <div class="flex-container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>Position</h2>
+    <div class="position-container">
+      <div class="box relative">relative</div>
+      <!-- <div class="box fixed">fixed</div> -->
+      <div class="box absolute">absolute</div>
+      <div class="box sticky">sticky</div>
+    </div>
+
+    <h2>Grid</h2>
+    <div class="grid-container">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+      <img src="https://placekitten.com/g/200/200" alt="">
+    </div>
+  </body>
 </html>

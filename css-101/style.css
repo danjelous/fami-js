@@ -13,7 +13,7 @@
 
 /* Styling auf Tagbasis */
 html {
-  background: red;
+  background: black;
 }
 
 .yellow {
@@ -21,9 +21,115 @@ html {
 }
 
 .blue {
-  background: blue;
+  background: lightblue;
 }
 
-h1 {
-  color: orange;
+h2, h3 {
+  margin-top: 3rem;
+}
+
+/* Fun with boxes */
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: beige;
+  border: 3px solid black;
+}
+
+.red-text {
+  color: red;
+}
+
+/* Dritter Box roten Hintergrund geben */
+/* Variante 1, zusätzliche CSS-Klasse */
+/* .red-bg {
+  background-color: red;
+} */
+
+/* Variante 2, über nth-child Selktor: Keine Zusätzliche klasse */
+/* .box-container .box:nth-child(3) {
+  background-color: red;
+} */
+
+/* Document Flow basics / display properties */
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.none {
+  display: none;
+}
+
+.flex-container {
+  display: flex;
+  padding: 20px;
+  background-color: aquamarine;
+  border: 3px solid black;
+
+  /* Zwei wichtigsten properties */
+  justify-content: center; /* Horizontale Ausrichtung */
+  align-items: center; /* Vertikale Ausrichtung */
+  gap: 30px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+
+  /* Gebe hier die Anzahl an Spalten an und wie breit sie werden sollen */
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  justify-items: center;
+
+  /* overflow: sollte etwas z.B. zu klein sein schneide es hier ab (hidden) */
+  overflow: hidden;
+}
+
+/* Ab einer Midnestbreite von 700px gelten die Regeln inenrhalb der geschwungenen Klammern.
+ * Wenn die Bildschirmbreite kleiner ist als 700px wird's ignoriert.  
+ */
+@media (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-container {
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* Alternativ: */
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Position */
+.position-container {
+  position: relative;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+
+  /* Hier habe ich Zugriff auf left / top / ... properties */
+  left: 25%;
+  top: 10%;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 60px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }

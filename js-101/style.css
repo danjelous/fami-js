@@ -1,0 +1,16 @@
+/* CSS Kommentar */
+html {
+  color: darkblue;
+}
+
+/* Schreibweisen für Klassen / Selektoren: */
+
+/* camelCase nicht in CSS */
+.notSoMuchCamelCaseInHere {
+
+}
+
+/* Kebab it is! */
+.kebab-case-variables-in-here {
+
+}

@@ -108,3 +108,27 @@ zutaten.splice(3, 0, 'Rum');
 console.log('Zutaten nach splice: \n', zutaten);
 
 // (Literal) Bottom line: mit splice kann ich an einer *beliebigen* Stalle im Array hinzufügen bzw. löschen
+
+// Ich kann alle Werte in ein Array "tun" - auch Arrays selbst
+// "Verschachtelte" Arrays
+
+// SO besser nicht: Schwer lesbar! Besser eine neue Zeile pro Wert (pro Index!)
+// const numberPairs = [[2, 4], [1, 3], [5, 6]];
+
+// Jedes Array-Paar in einer eigenen Zeile --> bessere Lesbarkeit
+// Wird auch zweidimenionales Array genannt: Hat Zeilen und Spalten
+const animalPairs = [
+  ["Ente", "Erpel"],
+  ["Stute", "Hengst"],
+  ["Henne", "Hahn"],
+];
+
+// Kann mir einzelne Zeilen ausgeben:
+console.log(animalPairs[2]); // ["Henne", "Hahn"]
+
+/**
+ * Kann zusätzlich in einer Zeile auch den Spaltenwert ausgeben lassen
+ * mit einem zusätzlichem index bzw. weiteren eckigen Klammern. 
+ * Beispiel: [Zeile][Spalte]
+ */
+console.log(animalPairs[2][1]); // "Hahn"

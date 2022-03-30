@@ -1,0 +1,14 @@
+/* Farbe hat 3 Komponenten: Rot (R), Grün (G) und Blau (B) */
+.red {
+  /* Variante 1: rgb Funktion */
+  color: rgb(255, 0, 0);
+
+  /* Variante 2: HEX */
+  color: #ff0000;
+
+  /* Variante 3: HEX als Kurschreibweise */
+  color: #f00;
+
+  color: #00f;
+  color: #0f0;
+}

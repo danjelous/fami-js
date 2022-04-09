@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="calculator">
-      <div class="display four-cols">DISPLAY</div>
+      <div class="display four-cols"></div>
 
       <button>7</button>
       <button>8</button>
@@ -22,17 +22,22 @@
       <button>6</button>
       <button class="action-button">-</button>
 
+      <!-- Bei onclick gebe ich einen Funktionsnamen (im JS) an, welche ausgeführt werden soll -->
+      <!-- <button onclick="buttonClickHandlerHTML()">1</button> -->
+      <!-- Ist aber etwas unhantlich und schwerfällig (viel Kopieren). Alternative über JS -->
       <button>1</button>
       <button>2</button>
       <button>3</button>
       <button class="action-button">*</button>
 
       <button class="two-cols">0</button>
-      <button>,</button>
+      <button>.</button>
       <button class="action-button">/</button>
 
-      <button class="three-cols">RESET 🔨</button>
-      <button class="action-button">=</button>
+      <button class="three-cols reset">RESET 🔨</button>
+      <button class="action-button calculate">=</button>
     </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -113,6 +113,7 @@ function multiply(a, b) {
  */
 const result = multiply(3, 4);
 
+
 // In der Variable result steht nun der Wert 12. Kann damit dann weiterarbeiten (rechnen, loggen, etc.)
 console.log(result);
 
@@ -175,4 +176,50 @@ function isValidPassword2(username, password) {
 
   // Hier pass alles
   return true; 
+}
+
+// Übung 2
+function avg(array) {
+  // 1. Gesamtsumme berechnen (Alle Werte in array zusammenzählen)
+  // 2. Anzahl an Werten berechnen
+  // 3. Ergebnis zurückgeben (Summe / Anzahl)
+
+  // Variable in der die Summe ermittelt wird
+  let sum = 0; // 0 als Startwert
+  for (let i = 0; i < array.length; i++) {
+     // Neue Summe = Aktuelle Summe + derzeitiger Wert im Array
+    sum = sum + array[i];
+    // sum += array[i]; Kurzschreibweise für obige Zeile
+  }
+
+  // 2. Anzahl an Werten berechnen
+  let itemAmount = array.length;
+
+  // 3. Ergebnis zurückgeben (Summe / Anzahl)
+  return sum / itemAmount;
+}
+
+console.log(avg([0, 50]));   // 25
+console.log(avg([50, 100])); // 75
+console.log(avg([5]));       // 5
+console.log(avg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 5.5
+
+// Übung 3
+function isPangram(word) {
+  // Ich suche nach all diesen Buchstaben in meinem Wort
+  const searchString = "abcdefghijklmnopqrstuvwxyz";
+
+  // Überprüfen ob jeder einzelne Buchstabe in word enthalten ist
+  for(i = 0; i < searchString.length; i++) {
+    if(!word.toLowerCase().includes(searchString[i])) {
+      /**
+       * Wenn ein Buchstabe nicht vorkommt kann ich gleich false returnen
+       * weil ich weiß dass dann nicht alle enthalten sein können
+       */
+      return false;
+    }
+  }
+
+  // Alle Buchstaben sind vorhanden!
+  return true;
 }
